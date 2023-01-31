@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Xorter",
+  "version": "0.1.0",
+  "description": "Make your tab hoarding mangable with Xorter. Groups similar and duplicates tabs together with a click, highly configurable to your liking.",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Xorter"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "tabGroups"
+  ],
+  "web_accessible_resources": [{
+    "matches": ["<all_urls>"],
+    "resources": ["src/content-script.ts", "settings.html", "public/Inter-Variable.ttf"]
+  }]
+}

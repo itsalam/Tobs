@@ -1,0 +1,109 @@
+/* body {
+  background-color: white;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "var-ui";
+  src: url("https://fonts.googleapis.com/css?family=Inter"), url('chrome-extension://__MSG_@@extension_id__/public/Inter-Variable.ttf');
+}
+
+@layer base {
+
+  body {
+    font-family: "var-ui";
+    font-size: 90%;
+  }
+
+  :root {
+    --primary: rgb(55 65 81);
+    --secondary: #1f2937;
+  }
+}
+
+.overflow-y-overlay {
+  overflow-y: overlay;
+}
+
+@layer components {
+
+  .button {
+    @apply relative px-6 py-2 font-bold w-full text-white rounded-lg uppercase buttonText text-xl
+  }
+
+  .tab {
+    @apply before:tab-curve after:tab-curve before:left after:right absolute inset-0 w-full h-full rounded-t-xl flex justify-center
+  }
+
+  .top-tab {
+    @apply animated -translate-x-1 -translate-y-1 group-hover:-translate-x-2.5 group-hover:-translate-y-2.5 group-focus:translate-x-0 group-focus:translate-y-0
+  }
+
+  .setting-tab {
+    @apply animated group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-focus:translate-x-0 group-focus:translate-y-0
+  }
+
+  .animated {
+    @apply transition-transform duration-300 transform ease-in-out
+  }
+
+  .bottom-tab {
+    @apply animated translate-x-1 translate-y-1 group-hover:translate-x-2.5 group-hover:translate-y-2.5 group-focus:translate-x-0 group-focus:translate-y-0
+  }
+
+  /* Make sure left = toptab offset and width+offset add up to the total length on container */
+  .bottom-fill {
+    @apply absolute w-[24rem] h-[15rem] top-[100%] -left-[1.5rem] bg-inherit rounded-lg
+  }
+
+  .tab-curve {
+    @apply w-4 h-4 absolute bottom-0 z-10
+  }
+
+  .left {
+    @apply -left-4 rounded-br-lg
+  }
+
+  .right{
+    @apply left-0 ml-[100%] rounded-bl-lg
+  }
+}
+
+@layer utilities {
+  .left {
+    box-shadow: 4px 5px 0px -3px var(--tw-shadow-color);
+  }
+
+  .right {
+    box-shadow: -4px 5px 0px -3px var(--tw-shadow-color);
+  }
+
+  .buttonText {
+    font-family: "Open Sans", Monaco, monospace;
+  }
+
+}
+
+body {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar  {
+  width: 5px;
+  border-radius: 2px;
+}
