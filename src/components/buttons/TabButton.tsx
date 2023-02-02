@@ -1,7 +1,7 @@
 
-import * as React from 'react';
+import * as React from "react";
   
-export default function TabButton(props: {onClick: unknown, className: string} & React.HTMLAttributes<HTMLButtonElement>): JSX.Element {
+export default function TabButton(props: {onClick?: unknown, className: string} & React.ButtonHTMLAttributes<HTMLButtonElement>): JSX.Element {
 
     const [extraClasses, ] = React.useState("");
 
@@ -11,7 +11,7 @@ export default function TabButton(props: {onClick: unknown, className: string} &
         if(props.onClick != null) props.onClick(event)
     }
 
-    return <button {...props} ref={buttonRef} onClick={(e) => {void onClick(e)}} className={["button group", props.className, extraClasses].join(" ")}>
+    return <button {...props} ref={buttonRef} onClick={(e) => {void onClick(e)}} className={["button", props.className, extraClasses].join(" ")}>
             {props.children}
     </button>
 }

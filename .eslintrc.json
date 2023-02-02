@@ -2,13 +2,15 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "webextensions": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:import/recommended",
         "plugin:jsx-a11y/recommended",
+        "plugin:tailwindcss/recommended",
         "plugin:@typescript-eslint/recommended",
         "eslint-config-prettier",
         "standard-with-typescript",
@@ -25,6 +27,7 @@
         "react"
     ],
     "rules": {
+        "quotes": [2, "double", { "avoidEscape": true }]
     },
     "settings": {
         "import/resolver": {

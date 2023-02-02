@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { CompressButton } from './CompressButton';
+import * as React from "react";
+import { SettingsButton } from "./SettingsButton";
 
 function Popup(): JSX.Element{
 
-  return <div className="inline-flex justify-between w-48 h-12 peer">
-    <CompressButton />
+  return <div className="group peer flex h-12 w-min justify-start gap-2">
+    <SettingsButton/>
   </div>
 }
 

@@ -10,13 +10,13 @@ export function SettingsSwitch(props: { options: Array<{name: string}>} & HTMLPr
             checked={enabled}
             onChange={setEnabled}
             className={`${
-            enabled ? 'bg-gray-500' : 'bg-gray-300'
-            } relative inline-flex h-6 w-11 shrink-0 items-center cursor-pointer rounded-full transition-colors ease-in-out  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 duration-200`}
+            enabled ? "bg-gray-700" : "bg-gray-500"
+            } relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors duration-200  ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
         >
             <span
             className={`${
-                enabled ? 'translate-x-6' : 'translate-x-1'
-            } inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 ease-in-out`}
+                enabled ? "translate-x-6" : "translate-x-1"
+            } inline-block h-4 w-4 rounded-full bg-white transition-transform duration-200 ease-in-out`}
             />
         </Switch>
     </div>  

@@ -23,8 +23,10 @@
     "tabs",
     "tabGroups"
   ],
-  "web_accessible_resources": [{
-    "matches": ["<all_urls>"],
-    "resources": ["src/content-script.ts", "settings.html", "public/Inter-Variable.ttf"]
-  }]
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["settings.html", "public/Inter-Variable.ttf"]
+    }
+  ]
 }

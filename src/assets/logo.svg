@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.327182, 0, 0, 1.449712, -3.262594, -4.673863)" style="">
+    <path d="M 13.543 7.531 L 15.702 7.531 C 16.789 7.531 17.713 8.305 18.056 9.384" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+    <path d="M 20 15.486 C 18.258 15.523 18.257 14.496 18.241 13.609 L 18.197 10.309 C 18.197 9.986 18.147 9.674 18.056 9.384" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+    <path d="M 11.963 7.531 L 13.641 7.531 C 14.728 7.531 15.651 8.305 15.994 9.384" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+    <path d="M 13.232 10.278 C 13.232 8.744 12.114 7.5 10.735 7.5 L 7.298 7.5 C 6.211 7.5 5.287 8.273 4.944 9.353" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+    <path d="M 3 15.455 C 4.742 15.492 4.743 14.465 4.759 13.578 L 4.803 10.278 C 4.803 9.954 4.853 9.642 4.944 9.353" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+    <path d="M 4.802 10.322 C 4.802 8.788 5.918 7.544 7.297 7.544 L 11.734 7.544" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+    <path d="M 19.999 15.486 L 17.97 15.493 L 15.032 15.499 C 13.29 15.536 13.29 14.509 13.275 13.622 L 13.231 10.322 C 13.231 9.998 13.18 9.687 13.088 9.397" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+    <path d="M 17.951 15.503 C 16.203 15.43 16.209 14.513 16.194 13.626 L 16.15 10.326 C 16.15 10.002 16.099 9.691 16.007 9.401" style="stroke-miterlimit: 10; stroke-width: 1.2px; stroke-linecap: round; stroke: rgb(255, 255, 255);"/>
+  </g>
+</svg>
